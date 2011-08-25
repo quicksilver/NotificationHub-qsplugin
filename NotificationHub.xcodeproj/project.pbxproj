@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -148,9 +148,16 @@
 /* Begin PBXProject section */
 		0259C573FE90428111CA0C5A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = 4DFE7E660E084743000B9AA3 /* Build configuration list for PBXProject "NotificationHub" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 0259C574FE90428111CA0C5A /* NotificationHub */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -217,6 +224,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0D910CE5324003857E3 /* Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 			};
 			name = Debug;
 		};
@@ -224,6 +232,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0DF10CE5324003857E3 /* Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 			};
 			name = Release;
 		};
@@ -231,6 +240,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0DB10CE5324003857E3 /* QSPlugIn_Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				PRODUCT_NAME = "Notification Hub";
 			};
 			name = Debug;
@@ -239,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0DD10CE5324003857E3 /* QSPlugIn_Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				PRODUCT_NAME = "Notification Hub";
 			};
 			name = Release;
