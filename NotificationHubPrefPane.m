@@ -176,7 +176,7 @@
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
 	NSDictionary *dict = [[[NSUserDefaults standardUserDefaults] objectForKey:kNotificationHub] objectAtIndex:rowIndex];
 	if ([[aTableColumn identifier] isEqualToString:@"notifier"]) {
-		return [NSNumber numberWithInteger:[notifiers indexOfObject:[dict objectForKey:@"notifier"]]];
+		return [NSNumber numberWithUnsignedInteger:[notifiers indexOfObject:[dict objectForKey:@"notifier"]]];
 	} else {
 		return [dict objectForKey:[aTableColumn identifier]];
 	}
