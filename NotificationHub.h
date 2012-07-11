@@ -6,9 +6,6 @@
 //  Copyright Kevin Ballard 2005. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-#import <QSCore/QSNotifyMediator.h>
-
 @interface NotificationHub : NSObject <QSNotifier>
 {
 }

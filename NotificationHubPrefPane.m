@@ -7,10 +7,6 @@
 //
 
 #import "NotificationHubPrefPane.h"
-#import <QSCore/QSRegistry.h>
-#import <QSCore/QSResourceManager.h>
-#import <QSCore/QSNotifyMediator.h>
-#import <QSFoundation/NSBundle_BLTRExtensions.h>
 #import "Preferences.h"
 
 @implementation NotificationHubPrefPane
@@ -173,26 +169,26 @@
 #pragma mark -
 #pragma mark NSTableView DataSource
 
-- (int)numberOfRowsInTableView:(NSTableView *)aTableView {
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView {
 	return [[[NSUserDefaults standardUserDefaults] objectForKey:kNotificationHub] count];
 }
 
-- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(int)rowIndex {
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
 	NSDictionary *dict = [[[NSUserDefaults standardUserDefaults] objectForKey:kNotificationHub] objectAtIndex:rowIndex];
 	if ([[aTableColumn identifier] isEqualToString:@"notifier"]) {
-		return [NSNumber numberWithInt:[notifiers indexOfObject:[dict objectForKey:@"notifier"]]];
+		return [NSNumber numberWithUnsignedInteger:[notifiers indexOfObject:[dict objectForKey:@"notifier"]]];
 	} else {
 		return [dict objectForKey:[aTableColumn identifier]];
 	}
 }
 
-- (void)tableView:(NSTableView *)aTableView setObjectValue:(id)anObject forTableColumn:(NSTableColumn *)aTableColumn row:(int)rowIndex {
+- (void)tableView:(NSTableView *)aTableView setObjectValue:(id)anObject forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
 	NSMutableArray *array = [[[NSUserDefaults standardUserDefaults] objectForKey:kNotificationHub] mutableCopy];
 	NSMutableDictionary *dict = [[array objectAtIndex:rowIndex] mutableCopy];
 	if ([[aTableColumn identifier] isEqualToString:@"notifier"]) {
-		if ([anObject intValue] == -1)
+		if ([anObject integerValue] == -1)
 			return;
-		[dict setObject:[notifiers objectAtIndex:[anObject intValue]] forKey:@"notifier"];
+		[dict setObject:[notifiers objectAtIndex:[anObject integerValue]] forKey:@"notifier"];
 	} else {
 		[dict setObject:anObject forKey:[aTableColumn identifier]];
 	}
@@ -214,11 +210,11 @@
 #pragma mark -
 #pragma mark ComboBoxCell DataSource
 
-- (int)numberOfItemsInComboBoxCell:(NSComboBoxCell *)aComboBoxCell {
+- (NSInteger)numberOfItemsInComboBoxCell:(NSComboBoxCell *)aComboBoxCell {
 	return [notifications count];
 }
 
-- (id)comboBoxCell:(NSComboBoxCell *)aComboBoxCell objectValueForItemAtIndex:(int)index {
+- (id)comboBoxCell:(NSComboBoxCell *)aComboBoxCell objectValueForItemAtIndex:(NSInteger)index {
 	return [notifications objectAtIndex:index];
 }
 @end
