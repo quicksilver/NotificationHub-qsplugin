@@ -6,9 +6,6 @@
 //  Copyright 2005 Kevin Ballard. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-#import <QSInterface/QSPreferencePane.h>
-
 @interface NotificationHubPrefPane : QSPreferencePane {
 	IBOutlet NSPopUpButton *defaultPopup;
 	IBOutlet NSButton *deleteButton;

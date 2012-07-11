@@ -8,8 +8,6 @@
 
 #import "NotificationHub.h"
 #import "Preferences.h"
-#import <QSCore/QSNotifyMediator.h>
-#import <QSCore/QSRegistry.h>
 
 @implementation NotificationHub
 - (void) displayNotificationWithAttributes:(NSDictionary *)attributes {

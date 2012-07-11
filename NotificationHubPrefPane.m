@@ -7,10 +7,6 @@
 //
 
 #import "NotificationHubPrefPane.h"
-#import <QSCore/QSRegistry.h>
-#import <QSCore/QSResourceManager.h>
-#import <QSCore/QSNotifyMediator.h>
-#import <QSFoundation/NSBundle_BLTRExtensions.h>
 #import "Preferences.h"
 
 @implementation NotificationHubPrefPane
