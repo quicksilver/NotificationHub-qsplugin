@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A55D8990713692B00D09C04 /* Info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A55D8980713692B00D09C04 /* Info.rtf */; };
 		0A6C0AA607F7D32C009D40FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A6C0AA507F7D32C009D40FC /* Localizable.strings */; };
 		0A6C0AE007F889C2009D40FC /* NotificationHubPrefPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6C0ADE07F889C2009D40FC /* NotificationHubPrefPane.m */; };
 		4DB4A1B90E101A900010C540 /* NotificationHubPrefPane.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6C0AF507F88BC5009D40FC /* NotificationHubPrefPane.nib */; };
@@ -16,7 +15,6 @@
 
 /* Begin PBXFileReference section */
 		0A33309707F8EF6500A9B2FC /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
-		0A55D8980713692B00D09C04 /* Info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Info.rtf; sourceTree = "<group>"; };
 		0A6C0A8F07F7D2EB009D40FC /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0A6C0ADD07F889C2009D40FC /* NotificationHubPrefPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHubPrefPane.h; sourceTree = "<group>"; };
 		0A6C0ADE07F889C2009D40FC /* NotificationHubPrefPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHubPrefPane.m; sourceTree = "<group>"; };
@@ -24,14 +22,11 @@
 		14A8D0D810CE5324003857E3 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		14A8D0D910CE5324003857E3 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		14A8D0DA10CE5324003857E3 /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
-		14A8D0DB10CE5324003857E3 /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
-		14A8D0DC10CE5324003857E3 /* QSPlugIn_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPlugIn_Prefix.pch; sourceTree = "<group>"; };
-		14A8D0DD10CE5324003857E3 /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
 		14A8D0DE10CE5324003857E3 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
 		14A8D0DF10CE5324003857E3 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		32DBCF980370C29C00C91783 /* NotificationHub_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHub_Prefix.pch; sourceTree = "<group>"; };
-		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
+		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.info; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* Notification Hub.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notification Hub.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4285A2315ACCB2F00BCB709 /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
 		E1EAB045068128A200774DFF /* NotificationHub.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NotificationHub.m; sourceTree = "<group>"; };
 		E1EAB047068128A800774DFF /* NotificationHub.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NotificationHub.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +58,6 @@
 		0259C582FE90428111CA0C5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0A55D8980713692B00D09C04 /* Info.rtf */,
 				0A6C0AF507F88BC5009D40FC /* NotificationHubPrefPane.nib */,
 				0A6C0AA507F7D32C009D40FC /* Localizable.strings */,
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
@@ -101,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				0A33309707F8EF6500A9B2FC /* Preferences.h */,
-				32DBCF980370C29C00C91783 /* NotificationHub_Prefix.pch */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -109,17 +102,16 @@
 		4D0C0E170E0FD0A50027D189 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				D4285A2315ACCB2F00BCB709 /* Quicksilver.pch */,
 				14A8D0D810CE5324003857E3 /* Common.xcconfig */,
 				14A8D0D910CE5324003857E3 /* Debug.xcconfig */,
 				14A8D0DA10CE5324003857E3 /* Developer.xcconfig */,
-				14A8D0DB10CE5324003857E3 /* QSPlugIn_Debug.xcconfig */,
-				14A8D0DC10CE5324003857E3 /* QSPlugIn_Prefix.pch */,
-				14A8D0DD10CE5324003857E3 /* QSPlugIn_Release.xcconfig */,
 				14A8D0DE10CE5324003857E3 /* QSPlugIn.xcconfig */,
 				14A8D0DF10CE5324003857E3 /* Release.xcconfig */,
 			);
-			path = Configuration;
-			sourceTree = QS_SOURCE_ROOT;
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -172,7 +164,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A55D8990713692B00D09C04 /* Info.rtf in Resources */,
 				0A6C0AA607F7D32C009D40FC /* Localizable.strings in Resources */,
 				4DB4A1B90E101A900010C540 /* NotificationHubPrefPane.nib in Resources */,
 			);
@@ -224,7 +215,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0D910CE5324003857E3 /* Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 			};
 			name = Debug;
 		};
@@ -232,24 +222,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8D0DF10CE5324003857E3 /* Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 			};
 			name = Release;
 		};
 		4DFE7E630E084743000B9AA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A8D0DB10CE5324003857E3 /* QSPlugIn_Debug.xcconfig */;
+			baseConfigurationReference = 14A8D0DE10CE5324003857E3 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				PRODUCT_NAME = "Notification Hub";
 			};
 			name = Debug;
 		};
 		4DFE7E640E084743000B9AA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A8D0DD10CE5324003857E3 /* QSPlugIn_Release.xcconfig */;
+			baseConfigurationReference = 14A8D0DE10CE5324003857E3 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				PRODUCT_NAME = "Notification Hub";
 			};
 			name = Release;
