@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A55D8990713692B00D09C04 /* Info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A55D8980713692B00D09C04 /* Info.rtf */; };
 		0A6C0AA607F7D32C009D40FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A6C0AA507F7D32C009D40FC /* Localizable.strings */; };
 		0A6C0AE007F889C2009D40FC /* NotificationHubPrefPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6C0ADE07F889C2009D40FC /* NotificationHubPrefPane.m */; };
 		4DB4A1B90E101A900010C540 /* NotificationHubPrefPane.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6C0AF507F88BC5009D40FC /* NotificationHubPrefPane.nib */; };
@@ -16,7 +15,6 @@
 
 /* Begin PBXFileReference section */
 		0A33309707F8EF6500A9B2FC /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
-		0A55D8980713692B00D09C04 /* Info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Info.rtf; sourceTree = "<group>"; };
 		0A6C0A8F07F7D2EB009D40FC /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0A6C0ADD07F889C2009D40FC /* NotificationHubPrefPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHubPrefPane.h; sourceTree = "<group>"; };
 		0A6C0ADE07F889C2009D40FC /* NotificationHubPrefPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHubPrefPane.m; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 		0259C582FE90428111CA0C5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0A55D8980713692B00D09C04 /* Info.rtf */,
 				0A6C0AF507F88BC5009D40FC /* NotificationHubPrefPane.nib */,
 				0A6C0AA507F7D32C009D40FC /* Localizable.strings */,
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
@@ -167,7 +164,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A55D8990713692B00D09C04 /* Info.rtf in Resources */,
 				0A6C0AA607F7D32C009D40FC /* Localizable.strings in Resources */,
 				4DB4A1B90E101A900010C540 /* NotificationHubPrefPane.nib in Resources */,
 			);
